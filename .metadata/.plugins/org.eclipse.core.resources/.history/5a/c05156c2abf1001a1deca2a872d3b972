@@ -1,0 +1,5 @@
+package com.stockEx.userLoginService.repo;
+
+public interface UserRepo {
+
+}

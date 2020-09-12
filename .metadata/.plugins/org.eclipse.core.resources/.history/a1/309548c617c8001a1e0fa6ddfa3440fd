@@ -1,0 +1,24 @@
+package com.socgen.waleed.training;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class DataDao {
+	
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	
+	
+	int getCountOfUsers() {
+		return jdbcTemplate.queryForObject("select count(userID) from studentDetails", Integer.class);
+	}
+
+	
+	String getNameById(int id) {
+		return jdbcTemplate.queryForObject("select userName from studentDetails where userID = ?", new Object[] {id}, String.class);
+	}
+	
+	
+}

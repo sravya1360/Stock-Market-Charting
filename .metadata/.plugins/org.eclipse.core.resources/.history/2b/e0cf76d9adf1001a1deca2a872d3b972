@@ -1,0 +1,5 @@
+package com.stockEx.userLoginService.service;
+
+public interface UserService {
+
+}

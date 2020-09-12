@@ -1,0 +1,27 @@
+package com.socgen.waleed.training;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+	
+	@Autowired
+	DataDao dao;
+
+	
+	@RequestMapping("/users/count")
+	int getCountOfUsers() {
+		return dao.getCountOfUsers();
+	}
+	
+	
+	@RequestMapping("/users/{id}")
+	String getNameById(@PathVariable int id) {
+		return dao.getNameById(id);
+	}
+	
+	
+}

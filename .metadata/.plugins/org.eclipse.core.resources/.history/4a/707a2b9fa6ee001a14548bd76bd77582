@@ -1,0 +1,77 @@
+package com.stockex.companyService.dto;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import com.stockex.companyService.entity.Sector;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CompanyDetailsDTO {
+	
+	
+	
+	private String companyName;
+	private Long turnOver;
+	private String ceo;
+	private HashSet<String> boardOfDirectors = new HashSet<String>();
+	private List<String> stock_exchanges = new ArrayList<String>();
+	private Sector sector;
+	private String brief;
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	public Long getTurnOver() {
+		return turnOver;
+	}
+	public void setTurnOver(Long turnOver) {
+		this.turnOver = turnOver;
+	}
+	public String getCeo() {
+		return this.ceo;
+	}
+	public void setCeo(String ceo) {
+		this.ceo = ceo;
+	}
+	public HashSet<String> getBoardOfDirectors() {
+		return boardOfDirectors;
+	}
+	public void setBoardOfDirectors(HashSet<String> boardOfDirectors) {
+		this.boardOfDirectors = boardOfDirectors;
+	}
+	public List<String> getStock_exchanges() {
+		return stock_exchanges;
+	}
+	public void setStock_exchanges(List<String> stock_exchanges) {
+		this.stock_exchanges = stock_exchanges;
+	}
+	public Sector getSector() {
+		return sector;
+	}
+	public void setSector(Sector sector) {
+		this.sector = sector;
+	}
+	public String getBrief() {
+		return brief;
+	}
+	public void setBrief(String brief) {
+		this.brief = brief;
+	}
+
+	
+	
+	
+	
+
+}

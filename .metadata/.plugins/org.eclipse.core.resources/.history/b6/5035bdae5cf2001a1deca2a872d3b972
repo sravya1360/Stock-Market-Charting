@@ -1,0 +1,5 @@
+package com.stockEx.excelUploadService.repo;
+
+public interface ExcelUploadRepo {
+
+}

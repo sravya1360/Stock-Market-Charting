@@ -1,0 +1,20 @@
+package com.socgen.waleed.training;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+
+public class TestService {
+	@Autowired
+	DataDao dao;
+	
+	
+	int getCountOfUsers() {
+		return dao.getCountOfUsers();
+	}
+	
+	String getNameById(@PathVariable int id) {
+		return dao.getNameById(id);
+	}
+	
+
+}

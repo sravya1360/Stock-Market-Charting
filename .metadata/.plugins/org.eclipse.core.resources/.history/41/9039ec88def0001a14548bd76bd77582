@@ -1,0 +1,5 @@
+package com.stockEx.excelUploadService.entity;
+
+public class StockPrice {
+
+}

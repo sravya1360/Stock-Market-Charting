@@ -1,0 +1,5 @@
+package com.stockEx.excelUploadService.exception;
+
+public class ExcelException {
+
+}
