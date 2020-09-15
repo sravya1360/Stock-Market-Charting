@@ -1,7 +1,0 @@
-package com.stockEx.userLoginService.dto;
-
-public class UserDto {
-	
-	
-
-}

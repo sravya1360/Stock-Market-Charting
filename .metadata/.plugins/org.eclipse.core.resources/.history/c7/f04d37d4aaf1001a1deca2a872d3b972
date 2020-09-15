@@ -1,5 +1,0 @@
-package com.stockEx.userLoginService.dto;
-
-public class UserResponseDto {
-
-}

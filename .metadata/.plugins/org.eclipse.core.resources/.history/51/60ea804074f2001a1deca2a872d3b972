@@ -1,5 +1,0 @@
-package com.stockEx.excelUploadService.service;
-
-public interface UploadService {
-
-}

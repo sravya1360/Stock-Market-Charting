@@ -1,5 +1,0 @@
-package com.stockEx.excelUploadService.dto;
-
-public class UpdateSummaryDto {
-
-}
